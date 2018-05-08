@@ -1,0 +1,6 @@
+framework module Pods_KoreanLearningTests {
+  umbrella header "Pods-KoreanLearningTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
