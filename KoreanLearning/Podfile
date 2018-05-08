@@ -11,6 +11,7 @@ target 'KoreanLearning' do
   pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'MJRefresh'
+  pod 'pop'
 
   target 'KoreanLearningTests' do
     inherit! :search_paths
