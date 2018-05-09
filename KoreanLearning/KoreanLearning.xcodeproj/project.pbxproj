@@ -9,8 +9,12 @@
 /* Begin PBXBuildFile section */
 		1B02F8CA6989D8C5F2061D17 /* Pods_KoreanLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3305643A183963470450FAE /* Pods_KoreanLearning.framework */; };
 		687A1BF743FFA49BC984DEC2 /* Pods_KoreanLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD8ABA5C9914B3F311D00 /* Pods_KoreanLearningTests.framework */; };
+		AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */; };
+		AA8B7AF520A2832600C8279F /* MTXHomeRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */; };
+		AA8B7AF720A2833900C8279F /* MTXListenRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF620A2833900C8279F /* MTXListenRootViewController.swift */; };
+		AA8B7AF920A2834A00C8279F /* MTXMineRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF820A2834A00C8279F /* MTXMineRootViewController.swift */; };
+		AA8B7AFB20A2835D00C8279F /* MTXWatchRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AFA20A2835D00C8279F /* MTXWatchRootViewController.swift */; };
 		AA974D7620A144DB0043A6E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA974D7520A144DB0043A6E1 /* AppDelegate.swift */; };
-		AA974D7820A144DB0043A6E1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA974D7720A144DB0043A6E1 /* ViewController.swift */; };
 		AA974D7B20A144DB0043A6E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA974D7920A144DB0043A6E1 /* Main.storyboard */; };
 		AA974D7E20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AA974D7C20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld */; };
 		AA974D8020A144DB0043A6E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA974D7F20A144DB0043A6E1 /* Assets.xcassets */; };
@@ -44,9 +48,13 @@
 		734BD18AF6DCAC4C22DE0D0A /* Pods-KoreanLearningUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearningUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearningUITests/Pods-KoreanLearningUITests.release.xcconfig"; sourceTree = "<group>"; };
 		86C7159C32E72E6130D9C208 /* Pods-KoreanLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearning/Pods-KoreanLearning.release.xcconfig"; sourceTree = "<group>"; };
 		928DD8ABA5C9914B3F311D00 /* Pods_KoreanLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreanLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXTabBarController.swift; sourceTree = "<group>"; };
+		AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXHomeRootViewController.swift; sourceTree = "<group>"; };
+		AA8B7AF620A2833900C8279F /* MTXListenRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXListenRootViewController.swift; sourceTree = "<group>"; };
+		AA8B7AF820A2834A00C8279F /* MTXMineRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXMineRootViewController.swift; sourceTree = "<group>"; };
+		AA8B7AFA20A2835D00C8279F /* MTXWatchRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXWatchRootViewController.swift; sourceTree = "<group>"; };
 		AA974D7220A144DB0043A6E1 /* KoreanLearning.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KoreanLearning.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA974D7520A144DB0043A6E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		AA974D7720A144DB0043A6E1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AA974D7A20A144DB0043A6E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AA974D7D20A144DB0043A6E1 /* KoreanLearning.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = KoreanLearning.xcdatamodel; sourceTree = "<group>"; };
 		AA974D7F20A144DB0043A6E1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -103,6 +111,31 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA8B7AFC20A28B1400C8279F /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				AA974D8120A144DB0043A6E1 /* LaunchScreen.storyboard */,
+				AA974D7920A144DB0043A6E1 /* Main.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		AA8B7AFD20A28B6F00C8279F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				AA974D7520A144DB0043A6E1 /* AppDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		AA8B7AFE20A28B9000C8279F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				AA974D7C20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
 		AA974D6920A144DA0043A6E1 = {
 			isa = PBXGroup;
 			children = (
@@ -128,17 +161,14 @@
 		AA974D7420A144DB0043A6E1 /* KoreanLearning */ = {
 			isa = PBXGroup;
 			children = (
+				AA8B7AFD20A28B6F00C8279F /* AppDelegate */,
 				AA974DA920A1A5290043A6E1 /* Routes */,
 				AA974DB120A1A8690043A6E1 /* Module */,
 				AA974DB020A1A6F80043A6E1 /* Macro */,
+				AA8B7AFC20A28B1400C8279F /* Storyboard */,
 				AA974DAF20A1A6A10043A6E1 /* Resource */,
-				AA974D7520A144DB0043A6E1 /* AppDelegate.swift */,
-				AA974D7720A144DB0043A6E1 /* ViewController.swift */,
-				AA974D7920A144DB0043A6E1 /* Main.storyboard */,
-				AA974D7F20A144DB0043A6E1 /* Assets.xcassets */,
-				AA974D8120A144DB0043A6E1 /* LaunchScreen.storyboard */,
+				AA8B7AFE20A28B9000C8279F /* CoreData */,
 				AA974D8420A144DB0043A6E1 /* Info.plist */,
-				AA974D7C20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld */,
 			);
 			path = KoreanLearning;
 			sourceTree = "<group>";
@@ -171,6 +201,7 @@
 		AA974DAF20A1A6A10043A6E1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AA974D7F20A144DB0043A6E1 /* Assets.xcassets */,
 				AA974DAD20A1A6990043A6E1 /* Images.xcassets */,
 			);
 			path = Resource;
@@ -284,6 +315,7 @@
 		AA974DC320A1AAF10043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA8B7AF820A2834A00C8279F /* MTXMineRootViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -305,6 +337,7 @@
 		AA974DC620A1AB000043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA8B7AFA20A2835D00C8279F /* MTXWatchRootViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -326,6 +359,7 @@
 		AA974DC920A1AB160043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA8B7AF620A2833900C8279F /* MTXListenRootViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -347,6 +381,7 @@
 		AA974DCC20A1AB260043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -378,6 +413,7 @@
 		AA974DD120A1AB9B0043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -466,6 +502,7 @@
 		AA974D6A20A144DA0043A6E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = MTX;
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "MTX Software Technology Co.,Ltd.";
@@ -677,8 +714,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA974D7820A144DB0043A6E1 /* ViewController.swift in Sources */,
+				AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */,
 				AA974D7E20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld in Sources */,
+				AA8B7AF720A2833900C8279F /* MTXListenRootViewController.swift in Sources */,
+				AA8B7AFB20A2835D00C8279F /* MTXWatchRootViewController.swift in Sources */,
+				AA8B7AF920A2834A00C8279F /* MTXMineRootViewController.swift in Sources */,
+				AA8B7AF520A2832600C8279F /* MTXHomeRootViewController.swift in Sources */,
 				AA974D7620A144DB0043A6E1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
