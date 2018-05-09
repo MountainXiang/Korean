@@ -17,15 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        
-        let tabbarController = MTXTabBarController()
-        tabbarController.setup()
-        
-        self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        self.window?.backgroundColor = UIColor.white
-        self.window?.makeKeyAndVisible()
-        
-        self.window?.rootViewController = tabbarController
+        setupTabBarController()
         
         return true
     }
@@ -102,6 +94,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             // Fallback on earlier versions
         }
+    }
+}
+
+private extension AppDelegate {
+    func setupTabBarController() {
+        guard let tabBarController = window?.rootViewController as? MTXTabBarController else { return }
+        tabBarController.setup()
     }
 }
 

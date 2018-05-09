@@ -27,6 +27,8 @@ class MTXTabBarController: UITabBarController {
         let watchVc = MTXWatchRootViewController()
         let mineVc = MTXMineRootViewController()
         self.viewControllers = [homeVc, listenVc, watchVc, mineVc]
+        
+        
     }
     
 
