@@ -14,6 +14,7 @@ target 'KoreanLearning' do
   pod 'pop'
   pod 'JLRoutes'
   pod 'YYKit'
+  pod 'CYLTabBarController'
  
   target 'KoreanLearningTests' do
     inherit! :search_paths
