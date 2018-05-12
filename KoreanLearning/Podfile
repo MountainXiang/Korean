@@ -7,14 +7,12 @@ target 'KoreanLearning' do
 
   # Pods for KoreanLearning
   pod 'lottie-ios'  
-  pod 'WCDB'
   pod 'AFNetworking'
   pod 'SDWebImage'
   pod 'MJRefresh'
   pod 'pop'
   pod 'JLRoutes'
-  pod 'YYKit'
- 
+  
   target 'KoreanLearningTests' do
     inherit! :search_paths
     # Pods for testing
