@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1B02F8CA6989D8C5F2061D17 /* Pods_KoreanLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3305643A183963470450FAE /* Pods_KoreanLearning.framework */; };
+		57675D7620BDA9AC00C53175 /* MTXString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57675D7520BDA9AC00C53175 /* MTXString.swift */; };
 		57DC430620A68D1200BF6041 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DC430520A68D1200BF6041 /* Media.xcassets */; };
 		57DC430D20A6B41900BF6041 /* MTXBezierText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC430C20A6B41900BF6041 /* MTXBezierText.swift */; };
-		57DC430F20A6C46000BF6041 /* MTXHandwritingLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC430E20A6C46000BF6041 /* MTXHandwritingLabel.swift */; };
 		687A1BF743FFA49BC984DEC2 /* Pods_KoreanLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD8ABA5C9914B3F311D00 /* Pods_KoreanLearningTests.framework */; };
 		AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */; };
 		AA8B7AF520A2832600C8279F /* MTXHomeRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */; };
@@ -46,9 +46,9 @@
 
 /* Begin PBXFileReference section */
 		159DB3B0902ACEA65E751609 /* Pods_KoreanLearningUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreanLearningUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		57675D7520BDA9AC00C53175 /* MTXString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXString.swift; sourceTree = "<group>"; };
 		57DC430520A68D1200BF6041 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		57DC430C20A6B41900BF6041 /* MTXBezierText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXBezierText.swift; sourceTree = "<group>"; };
-		57DC430E20A6C46000BF6041 /* MTXHandwritingLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXHandwritingLabel.swift; sourceTree = "<group>"; };
 		6AB5CF1F758B5B3C4A984911 /* Pods-KoreanLearningTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearningTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearningTests/Pods-KoreanLearningTests.release.xcconfig"; sourceTree = "<group>"; };
 		734BD18AF6DCAC4C22DE0D0A /* Pods-KoreanLearningUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearningUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearningUITests/Pods-KoreanLearningUITests.release.xcconfig"; sourceTree = "<group>"; };
 		86C7159C32E72E6130D9C208 /* Pods-KoreanLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearning/Pods-KoreanLearning.release.xcconfig"; sourceTree = "<group>"; };
@@ -105,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		57675D7420BDA93100C53175 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				57675D7520BDA9AC00C53175 /* MTXString.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
 		57DC430320A68C8200BF6041 /* Macro */ = {
 			isa = PBXGroup;
 			children = (
@@ -186,6 +194,7 @@
 		AA974D7420A144DB0043A6E1 /* KoreanLearning */ = {
 			isa = PBXGroup;
 			children = (
+				57675D7420BDA93100C53175 /* Extension */,
 				57DC430820A6B36700BF6041 /* Category */,
 				57DC430320A68C8200BF6041 /* Macro */,
 				57DC430420A68C8200BF6041 /* Routes */,
@@ -393,7 +402,6 @@
 		AA974DCC20A1AB260043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				57DC430E20A6C46000BF6041 /* MTXHandwritingLabel.swift */,
 				AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */,
 				57DC430C20A6B41900BF6041 /* MTXBezierText.swift */,
 			);
@@ -756,9 +764,9 @@
 				AA8B7AFB20A2835D00C8279F /* MTXWatchRootViewController.swift in Sources */,
 				AA8B7AF920A2834A00C8279F /* MTXMineRootViewController.swift in Sources */,
 				57DC430D20A6B41900BF6041 /* MTXBezierText.swift in Sources */,
+				57675D7620BDA9AC00C53175 /* MTXString.swift in Sources */,
 				AA8B7AF520A2832600C8279F /* MTXHomeRootViewController.swift in Sources */,
 				AA974D7620A144DB0043A6E1 /* AppDelegate.swift in Sources */,
-				57DC430F20A6C46000BF6041 /* MTXHandwritingLabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

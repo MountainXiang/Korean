@@ -10,8 +10,8 @@ import UIKit
 
 class MTXBezierText: UIView, CAAnimationDelegate {
 
-    //字迹动画速度
-    private let velocity:TimeInterval = 1.0
+    //单个字迹到动画时长
+    private let velocity:TimeInterval = 0.5
     
     //重复次数
     private let drawRepeatCount:Float = 0
@@ -87,8 +87,12 @@ class MTXBezierText: UIView, CAAnimationDelegate {
     private func bezierPathFrom(string:String) -> UIBezierPath{
         let paths = CGMutablePath()
         //Helvetica-Bold  SnellRoundhand AmericanTypewriter-Bold
-        let fontName = __CFStringMakeConstantString("Helvetica-Bold")!
-        let fontRef:AnyObject = CTFontCreateWithName(fontName, 22, nil)
+        let fontNameStr = "Helvetica-Bold"
+        let fontName = __CFStringMakeConstantString(fontNameStr)!
+        let fontSize:CGFloat = 22
+        let fontRef:CTFont = CTFontCreateWithName(fontName, fontSize, nil)
+        let font:UIFont = UIFont(name: fontNameStr, size: fontSize)!
+        let lineSpace:CGFloat = 5
         
         let attrString = NSAttributedString(string: string, attributes:
             [kCTFontAttributeName as NSAttributedStringKey : fontRef])
@@ -105,10 +109,7 @@ class MTXBezierText: UIView, CAAnimationDelegate {
             let runFontC = CFDictionaryGetValue(CTRunGetAttributes(runb),CTFontName)
             let runFontS = unsafeBitCast(runFontC, to: CTFont.self)
             
-            let width = UIScreen.main.bounds.width
-            
-            var temp = 0
-            var offset:CGFloat = 0.0
+            let width = self.bounds.size.width
             
             for i in 0..<CTRunGetGlyphCount(runb) {
                 let range = CFRangeMake(i, 1)
@@ -119,17 +120,12 @@ class MTXBezierText: UIView, CAAnimationDelegate {
                 CTRunGetGlyphs(runb, range, glyph)
                 CTRunGetPositions(runb, range, position);
                 
-                let temp3 = CGFloat(position.pointee.x)
-                let temp2 = (Int) (temp3 / width)
-                let temp1 = 0
-                if(temp2 > temp1){
-                    
-                    temp = temp2
-                    offset = position.pointee.x - (CGFloat(temp) * width)
-                }
+                //Automatic Linebreak
+                let lineH = "test".stringHeightWith(font: font, width: width, lineSpace: lineSpace)
+                
                 if let path = CTFontCreatePathForGlyph(runFontS,glyph.pointee,nil) {
-                    let x = position.pointee.x - (CGFloat(temp) * width) - offset
-                    let y = position.pointee.y - (CGFloat(temp) * 80)
+                    let x = position.pointee.x.truncatingRemainder(dividingBy: width)
+                    let y = position.pointee.y - floor(position.pointee.x / width) * lineH
                     let transform = CGAffineTransform(translationX: x, y: y)
                     paths.addPath(path, transform: transform)
                 }
