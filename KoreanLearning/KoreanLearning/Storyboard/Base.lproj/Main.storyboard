@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -39,5 +41,88 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
         </scene>
+        <!--Card Content View Controller-->
+        <scene sceneID="rZd-Hx-pKd">
+            <objects>
+                <viewController storyboardIdentifier="CardContent" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Ito-9G-5Cn" customClass="CardContentViewController" customModule="Demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" autoresizesSubviews="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" id="bsL-K7-4nS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua." textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXL-iq-xR6">
+                                <rect key="frame" x="16" y="66" width="343" height="65"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="65" id="BQ8-9O-H15"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flBackground" translatesAutoresizingMaskIntoConstraints="NO" id="L59-4t-Kof">
+                                <rect key="frame" x="0.0" y="146" width="375" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="L59-4t-Kof" secondAttribute="height" multiplier="31:9" id="YQ4-k1-V7y"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHF-9b-WrL">
+                                <rect key="frame" x="16" y="270.5" width="343" height="165"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="165" id="vsM-Cd-xQX"/>
+                                </constraints>
+                                <string key="text">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</string>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjK-Ee-A1a">
+                                <rect key="frame" x="0.0" y="460.5" width="375" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="CNu-ZN-PiV"/>
+                                </constraints>
+                                <state key="normal" title="Do some magic ✨✨ "/>
+                                <connections>
+                                    <action selector="doMagic:" destination="Ito-9G-5Cn" eventType="touchUpInside" id="sR1-Qa-08S"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Demo !!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jzp-Th-f5k">
+                                <rect key="frame" x="16" y="26" width="343" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="7Bo-BY-OUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="bjK-Ee-A1a" firstAttribute="leading" secondItem="L6a-8Q-ljk" secondAttribute="leading" id="0cm-6X-tE2"/>
+                            <constraint firstItem="L6a-8Q-ljk" firstAttribute="trailing" secondItem="cXL-iq-xR6" secondAttribute="trailing" constant="16" id="8yU-bc-N1j"/>
+                            <constraint firstItem="L6a-8Q-ljk" firstAttribute="trailing" secondItem="jzp-Th-f5k" secondAttribute="trailing" constant="16" id="Ide-iE-wyB"/>
+                            <constraint firstItem="L59-4t-Kof" firstAttribute="top" secondItem="cXL-iq-xR6" secondAttribute="bottom" constant="15" id="K7H-2B-bji"/>
+                            <constraint firstItem="jzp-Th-f5k" firstAttribute="leading" secondItem="L6a-8Q-ljk" secondAttribute="leading" constant="16" id="K7U-PB-HHT"/>
+                            <constraint firstItem="L59-4t-Kof" firstAttribute="leading" secondItem="L6a-8Q-ljk" secondAttribute="leading" id="LNA-2A-TNJ"/>
+                            <constraint firstItem="L59-4t-Kof" firstAttribute="trailing" secondItem="L6a-8Q-ljk" secondAttribute="trailing" id="Vcy-ef-y8f"/>
+                            <constraint firstItem="L6a-8Q-ljk" firstAttribute="trailing" secondItem="bjK-Ee-A1a" secondAttribute="trailing" id="X6z-qi-xNs"/>
+                            <constraint firstItem="UHF-9b-WrL" firstAttribute="top" secondItem="L59-4t-Kof" secondAttribute="bottom" constant="16" id="edx-MN-yWm"/>
+                            <constraint firstItem="bjK-Ee-A1a" firstAttribute="top" secondItem="UHF-9b-WrL" secondAttribute="bottom" constant="25" id="fP2-7f-mGP"/>
+                            <constraint firstItem="cXL-iq-xR6" firstAttribute="leading" secondItem="L6a-8Q-ljk" secondAttribute="leading" constant="16" id="nIo-Xr-1oD"/>
+                            <constraint firstItem="cXL-iq-xR6" firstAttribute="top" secondItem="jzp-Th-f5k" secondAttribute="bottom" constant="5" id="tFn-dU-Cic"/>
+                            <constraint firstItem="UHF-9b-WrL" firstAttribute="leading" secondItem="L6a-8Q-ljk" secondAttribute="leading" constant="16" id="v5w-gh-dTD"/>
+                            <constraint firstItem="jzp-Th-f5k" firstAttribute="top" secondItem="L6a-8Q-ljk" secondAttribute="top" constant="6" id="yS1-BM-N0i"/>
+                            <constraint firstItem="L6a-8Q-ljk" firstAttribute="trailing" secondItem="UHF-9b-WrL" secondAttribute="trailing" constant="16" id="zg9-Y7-ug8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="L6a-8Q-ljk"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lZ1-Lf-Qnl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-4903.6231884057979" y="-216.03260869565219"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="flBackground" width="638" height="678"/>
+    </resources>
 </document>

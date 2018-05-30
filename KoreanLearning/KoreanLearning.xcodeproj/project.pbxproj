@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B02F8CA6989D8C5F2061D17 /* Pods_KoreanLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D3305643A183963470450FAE /* Pods_KoreanLearning.framework */; };
+		573770B420BF139C009DFBE8 /* CardContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 573770B320BF139C009DFBE8 /* CardContentViewController.swift */; };
 		57675D7620BDA9AC00C53175 /* MTXString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57675D7520BDA9AC00C53175 /* MTXString.swift */; };
 		57DC430620A68D1200BF6041 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DC430520A68D1200BF6041 /* Media.xcassets */; };
 		57DC430D20A6B41900BF6041 /* MTXBezierText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC430C20A6B41900BF6041 /* MTXBezierText.swift */; };
@@ -46,6 +47,7 @@
 
 /* Begin PBXFileReference section */
 		159DB3B0902ACEA65E751609 /* Pods_KoreanLearningUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreanLearningUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		573770B320BF139C009DFBE8 /* CardContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardContentViewController.swift; sourceTree = "<group>"; };
 		57675D7520BDA9AC00C53175 /* MTXString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXString.swift; sourceTree = "<group>"; };
 		57DC430520A68D1200BF6041 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		57DC430C20A6B41900BF6041 /* MTXBezierText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXBezierText.swift; sourceTree = "<group>"; };
@@ -358,6 +360,7 @@
 		AA974DC620A1AB000043A6E1 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				573770B320BF139C009DFBE8 /* CardContentViewController.swift */,
 				AA8B7AFA20A2835D00C8279F /* MTXWatchRootViewController.swift */,
 			);
 			path = View;
@@ -713,8 +716,10 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-KoreanLearning/Pods-KoreanLearning-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Cards/Cards.framework",
 				"${BUILT_PRODUCTS_DIR}/JLRoutes/JLRoutes.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/Player/Player.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
@@ -722,8 +727,10 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cards.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JLRoutes.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Player.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
@@ -758,6 +765,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573770B420BF139C009DFBE8 /* CardContentViewController.swift in Sources */,
 				AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */,
 				AA974D7E20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld in Sources */,
 				AA8B7AF720A2833900C8279F /* MTXListenRootViewController.swift in Sources */,
@@ -871,7 +879,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -924,7 +932,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -941,7 +949,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U5763E89G;
 				INFOPLIST_FILE = KoreanLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mountain.xiang.KoreanLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -959,7 +967,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U5763E89G;
 				INFOPLIST_FILE = KoreanLearning/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.mountain.xiang.KoreanLearning;
 				PRODUCT_NAME = "$(TARGET_NAME)";
