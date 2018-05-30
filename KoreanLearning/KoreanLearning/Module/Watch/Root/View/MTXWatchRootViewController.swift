@@ -17,9 +17,6 @@ class MTXWatchRootViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.brown
         
-        //cardContent
-        let cardContent = storyboard?.instantiateViewController(withIdentifier: "CardContent")
-        
         let cardMargin: CGFloat = 20
         let cardW = (view.bounds.size.width - 3 * cardMargin) / 2
         let cardH = cardW * 1.5
@@ -41,18 +38,25 @@ class MTXWatchRootViewController: UIViewController {
         card.subtitle = "Inside the extraordinary world of Buck Bunny"
         card.category = "today's movie"
         
-        
+        //cardContent
+        let cardContent = UIStoryboard(name: "Main", bundle: Bundle.main).instantiateViewController(withIdentifier: "CardContent")
+        //this initialization cause cardContent become nil
+        //        let cardContent = storyboard?.instantiateViewController(withIdentifier: "CardContent")
         card.shouldPresent(cardContent, from: self)
         
         //CardHighlight
         let card2 = CardHighlight.init(frame: CGRect(x: card.frame.maxX + cardMargin, y: card.frame.minY, width: cardW, height: cardH))
         view.addSubview(card2)
-        card2.shouldPresent(cardContent, from: self, fullscreen: true)
+        //cardContent
+        let cardContent2 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardContent")
+        card2.shouldPresent(cardContent2, from: self, fullscreen: true)
         
         //CardGroup
         let card3 = CardGroup.init(frame: CGRect(x: card.frame.minX, y: card.frame.maxY + cardMargin, width: cardW, height: cardH))
         view.addSubview(card3)
-        card3.shouldPresent(cardContent, from: self)
+        //cardContent
+        let cardContent3 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardContent")
+        card3.shouldPresent(cardContent3, from: self)
         
         //CardGroupSliding
         let card4 = CardGroupSliding.init(frame: CGRect(x: card3.frame.maxX + cardMargin, y: card3.frame.minY, width: cardW, height: cardH))
@@ -69,12 +73,16 @@ class MTXWatchRootViewController: UIViewController {
         ]
         
         card4.icons = icons
-        card4.shouldPresent(cardContent, from: self)
+        //cardContent
+        let cardContent4 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardContent")
+        card4.shouldPresent(cardContent4, from: self)
         
         //CardArticle
         let card5 = CardGroup.init(frame: CGRect(x: card3.frame.minX, y: card3.frame.maxY + cardMargin, width: cardW, height: cardH))
         view.addSubview(card5)
-        card5.shouldPresent(cardContent, from: self)
+        //cardContent
+        let cardContent5 = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardContent")
+        card5.shouldPresent(cardContent5, from: self)
         
     }
 
