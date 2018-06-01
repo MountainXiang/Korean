@@ -13,7 +13,8 @@ target 'KoreanLearning' do
   pod 'pop'
   pod 'JLRoutes'
   pod 'Cards', :path => '../'
- 
+  pod 'CYLTabBarController'
+
   target 'KoreanLearningTests' do
     inherit! :search_paths
     # Pods for testing

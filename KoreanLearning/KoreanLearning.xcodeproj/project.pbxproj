@@ -13,6 +13,13 @@
 		57DC430620A68D1200BF6041 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57DC430520A68D1200BF6041 /* Media.xcassets */; };
 		57DC430D20A6B41900BF6041 /* MTXBezierText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57DC430C20A6B41900BF6041 /* MTXBezierText.swift */; };
 		687A1BF743FFA49BC984DEC2 /* Pods_KoreanLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 928DD8ABA5C9914B3F311D00 /* Pods_KoreanLearningTests.framework */; };
+		AA19D01620C1363900B27080 /* redIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D01320C1363900B27080 /* redIcon@2x.png */; };
+		AA19D01720C1363900B27080 /* blueIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D01420C1363900B27080 /* blueIcon@2x.png */; };
+		AA19D01820C1363900B27080 /* blackIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D01520C1363900B27080 /* blackIcon@2x.png */; };
+		AA19D01C20C149B100B27080 /* MTXTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19D01B20C149B100B27080 /* MTXTabBar.swift */; };
+		AA4AAB7220C12EE60070F69C /* redIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4AAB7120C12EE60070F69C /* redIcon@3x.png */; };
+		AA4AAB7420C12EF80070F69C /* blueIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4AAB7320C12EF80070F69C /* blueIcon@3x.png */; };
+		AA4AAB7620C12FBB0070F69C /* blackIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4AAB7520C12FBB0070F69C /* blackIcon@3x.png */; };
 		AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */; };
 		AA8B7AF520A2832600C8279F /* MTXHomeRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */; };
 		AA8B7AF720A2833900C8279F /* MTXListenRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA8B7AF620A2833900C8279F /* MTXListenRootViewController.swift */; };
@@ -56,6 +63,13 @@
 		734BD18AF6DCAC4C22DE0D0A /* Pods-KoreanLearningUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearningUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearningUITests/Pods-KoreanLearningUITests.release.xcconfig"; sourceTree = "<group>"; };
 		86C7159C32E72E6130D9C208 /* Pods-KoreanLearning.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearning.release.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearning/Pods-KoreanLearning.release.xcconfig"; sourceTree = "<group>"; };
 		928DD8ABA5C9914B3F311D00 /* Pods_KoreanLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreanLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA19D01320C1363900B27080 /* redIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon@2x.png"; sourceTree = "<group>"; };
+		AA19D01420C1363900B27080 /* blueIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueIcon@2x.png"; sourceTree = "<group>"; };
+		AA19D01520C1363900B27080 /* blackIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon@2x.png"; sourceTree = "<group>"; };
+		AA19D01B20C149B100B27080 /* MTXTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXTabBar.swift; sourceTree = "<group>"; };
+		AA4AAB7120C12EE60070F69C /* redIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon@3x.png"; sourceTree = "<group>"; };
+		AA4AAB7320C12EF80070F69C /* blueIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueIcon@3x.png"; sourceTree = "<group>"; };
+		AA4AAB7520C12FBB0070F69C /* blackIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon@3x.png"; sourceTree = "<group>"; };
 		AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXTabBarController.swift; sourceTree = "<group>"; };
 		AA8B7AF420A2832600C8279F /* MTXHomeRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXHomeRootViewController.swift; sourceTree = "<group>"; };
 		AA8B7AF620A2833900C8279F /* MTXListenRootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXListenRootViewController.swift; sourceTree = "<group>"; };
@@ -149,6 +163,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		AA4AAB7020C12ECC0070F69C /* icons */ = {
+			isa = PBXGroup;
+			children = (
+				AA19D01320C1363900B27080 /* redIcon@2x.png */,
+				AA4AAB7120C12EE60070F69C /* redIcon@3x.png */,
+				AA19D01420C1363900B27080 /* blueIcon@2x.png */,
+				AA4AAB7320C12EF80070F69C /* blueIcon@3x.png */,
+				AA19D01520C1363900B27080 /* blackIcon@2x.png */,
+				AA4AAB7520C12FBB0070F69C /* blackIcon@3x.png */,
+			);
+			path = icons;
+			sourceTree = "<group>";
+		};
 		AA8B7AFC20A28B1400C8279F /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
@@ -234,6 +261,7 @@
 		AA974DAF20A1A6A10043A6E1 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				AA4AAB7020C12ECC0070F69C /* icons */,
 				AA974D7F20A144DB0043A6E1 /* Assets.xcassets */,
 				57DC430520A68D1200BF6041 /* Media.xcassets */,
 			);
@@ -442,6 +470,7 @@
 			isa = PBXGroup;
 			children = (
 				AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */,
+				AA19D01B20C149B100B27080 /* MTXTabBar.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -577,9 +606,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA974D8320A144DB0043A6E1 /* LaunchScreen.storyboard in Resources */,
+				AA19D01820C1363900B27080 /* blackIcon@2x.png in Resources */,
 				AA974D8020A144DB0043A6E1 /* Assets.xcassets in Resources */,
+				AA4AAB7420C12EF80070F69C /* blueIcon@3x.png in Resources */,
 				57DC430620A68D1200BF6041 /* Media.xcassets in Resources */,
 				AA974D7B20A144DB0043A6E1 /* Main.storyboard in Resources */,
+				AA4AAB7620C12FBB0070F69C /* blackIcon@3x.png in Resources */,
+				AA4AAB7220C12EE60070F69C /* redIcon@3x.png in Resources */,
+				AA19D01620C1363900B27080 /* redIcon@2x.png in Resources */,
+				AA19D01720C1363900B27080 /* blueIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -771,6 +806,7 @@
 				573770B420BF139C009DFBE8 /* CardContentViewController.swift in Sources */,
 				AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */,
 				AA974D7E20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld in Sources */,
+				AA19D01C20C149B100B27080 /* MTXTabBar.swift in Sources */,
 				AA8B7AF720A2833900C8279F /* MTXListenRootViewController.swift in Sources */,
 				AA8B7AFB20A2835D00C8279F /* MTXWatchRootViewController.swift in Sources */,
 				AA8B7AF920A2834A00C8279F /* MTXMineRootViewController.swift in Sources */,
