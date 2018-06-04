@@ -16,7 +16,6 @@
 		AA19D01620C1363900B27080 /* redIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D01320C1363900B27080 /* redIcon@2x.png */; };
 		AA19D01720C1363900B27080 /* blueIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D01420C1363900B27080 /* blueIcon@2x.png */; };
 		AA19D01820C1363900B27080 /* blackIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA19D01520C1363900B27080 /* blackIcon@2x.png */; };
-		AA19D01C20C149B100B27080 /* MTXTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA19D01B20C149B100B27080 /* MTXTabBar.swift */; };
 		AA4AAB7220C12EE60070F69C /* redIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4AAB7120C12EE60070F69C /* redIcon@3x.png */; };
 		AA4AAB7420C12EF80070F69C /* blueIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4AAB7320C12EF80070F69C /* blueIcon@3x.png */; };
 		AA4AAB7620C12FBB0070F69C /* blackIcon@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA4AAB7520C12FBB0070F69C /* blackIcon@3x.png */; };
@@ -32,6 +31,7 @@
 		AA974D8320A144DB0043A6E1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA974D8120A144DB0043A6E1 /* LaunchScreen.storyboard */; };
 		AA974D8E20A144DB0043A6E1 /* KoreanLearningTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA974D8D20A144DB0043A6E1 /* KoreanLearningTests.swift */; };
 		AA974D9920A144DB0043A6E1 /* KoreanLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA974D9820A144DB0043A6E1 /* KoreanLearningUITests.swift */; };
+		AAB1C99E20C5150F00FFF693 /* MTXPlusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAB1C99D20C5150F00FFF693 /* MTXPlusButton.swift */; };
 		AAE1CF5D20C0235200388EEE /* DimensMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAE1CF5C20C0235200388EEE /* DimensMacro.swift */; };
 		D873A3B1D6CB0259D156D456 /* Pods_KoreanLearningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159DB3B0902ACEA65E751609 /* Pods_KoreanLearningUITests.framework */; };
 /* End PBXBuildFile section */
@@ -66,7 +66,6 @@
 		AA19D01320C1363900B27080 /* redIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon@2x.png"; sourceTree = "<group>"; };
 		AA19D01420C1363900B27080 /* blueIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueIcon@2x.png"; sourceTree = "<group>"; };
 		AA19D01520C1363900B27080 /* blackIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon@2x.png"; sourceTree = "<group>"; };
-		AA19D01B20C149B100B27080 /* MTXTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXTabBar.swift; sourceTree = "<group>"; };
 		AA4AAB7120C12EE60070F69C /* redIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "redIcon@3x.png"; sourceTree = "<group>"; };
 		AA4AAB7320C12EF80070F69C /* blueIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blueIcon@3x.png"; sourceTree = "<group>"; };
 		AA4AAB7520C12FBB0070F69C /* blackIcon@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "blackIcon@3x.png"; sourceTree = "<group>"; };
@@ -88,6 +87,8 @@
 		AA974D9420A144DB0043A6E1 /* KoreanLearningUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KoreanLearningUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AA974D9820A144DB0043A6E1 /* KoreanLearningUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoreanLearningUITests.swift; sourceTree = "<group>"; };
 		AA974D9A20A144DB0043A6E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AAB1C99820C4E90A00FFF693 /* KoreanLearning-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KoreanLearning-Bridging-Header.h"; sourceTree = "<group>"; };
+		AAB1C99D20C5150F00FFF693 /* MTXPlusButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MTXPlusButton.swift; sourceTree = "<group>"; };
 		AAE1CF5C20C0235200388EEE /* DimensMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DimensMacro.swift; sourceTree = "<group>"; };
 		B9D376F7E523ACA7B695FE85 /* Pods-KoreanLearningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KoreanLearningUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KoreanLearningUITests/Pods-KoreanLearningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D3305643A183963470450FAE /* Pods_KoreanLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KoreanLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +227,7 @@
 		AA974D7420A144DB0043A6E1 /* KoreanLearning */ = {
 			isa = PBXGroup;
 			children = (
+				AAB1C98F20C4E1FE00FFF693 /* Header */,
 				57675D7420BDA93100C53175 /* Extension */,
 				57DC430820A6B36700BF6041 /* Category */,
 				57DC430320A68C8200BF6041 /* Macro */,
@@ -470,9 +472,17 @@
 			isa = PBXGroup;
 			children = (
 				AA8B7AF220A2830500C8279F /* MTXTabBarController.swift */,
-				AA19D01B20C149B100B27080 /* MTXTabBar.swift */,
+				AAB1C99D20C5150F00FFF693 /* MTXPlusButton.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AAB1C98F20C4E1FE00FFF693 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				AAB1C99820C4E90A00FFF693 /* KoreanLearning-Bridging-Header.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 		C05F0511C3BE5C027FE81DA8 /* Pods */ = {
@@ -566,6 +576,7 @@
 				TargetAttributes = {
 					AA974D7120A144DB0043A6E1 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0930;
 						ProvisioningStyle = Automatic;
 					};
 					AA974D8820A144DB0043A6E1 = {
@@ -806,11 +817,11 @@
 				573770B420BF139C009DFBE8 /* CardContentViewController.swift in Sources */,
 				AA8B7AF320A2830500C8279F /* MTXTabBarController.swift in Sources */,
 				AA974D7E20A144DB0043A6E1 /* KoreanLearning.xcdatamodeld in Sources */,
-				AA19D01C20C149B100B27080 /* MTXTabBar.swift in Sources */,
 				AA8B7AF720A2833900C8279F /* MTXListenRootViewController.swift in Sources */,
 				AA8B7AFB20A2835D00C8279F /* MTXWatchRootViewController.swift in Sources */,
 				AA8B7AF920A2834A00C8279F /* MTXMineRootViewController.swift in Sources */,
 				57DC430D20A6B41900BF6041 /* MTXBezierText.swift in Sources */,
+				AAB1C99E20C5150F00FFF693 /* MTXPlusButton.swift in Sources */,
 				57675D7620BDA9AC00C53175 /* MTXString.swift in Sources */,
 				AA8B7AF520A2832600C8279F /* MTXHomeRootViewController.swift in Sources */,
 				AA974D7620A144DB0043A6E1 /* AppDelegate.swift in Sources */,
@@ -986,6 +997,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U5763E89G;
@@ -996,6 +1008,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KoreanLearning/Header/KoreanLearning-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -1007,6 +1021,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 5U5763E89G;
@@ -1017,6 +1032,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "KoreanLearning/Header/KoreanLearning-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

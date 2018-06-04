@@ -59,8 +59,9 @@ class MTXListenRootViewController: UIViewController {
         let btnW : CGFloat = 200
         let btnH : CGFloat = 50
         let btnMargin : CGFloat = 50
+        
         for i in 0..<3 {
-            let btn = UIButton(frame: CGRect(x: (SCREEN_WIDTH - btnW) / 2, y: btnMargin * (CGFloat(i) + 1) + CGFloat(i) * btnH, width: btnW, height: btnH))
+            let btn = UIButton(frame: CGRect(x: (SCREEN_WIDTH - btnW) / 2, y: TOP_BAR_HEIGHT + btnMargin * (CGFloat(i) + 1) + CGFloat(i) * btnH, width: btnW, height: btnH))
             view.addSubview(btn)
             btn.tag = i
             btn.setTitle(icons[i], for: .normal)
@@ -68,7 +69,7 @@ class MTXListenRootViewController: UIViewController {
             btn.backgroundColor = UIColor.orange
         }
         
-        let btn = UIButton(frame: CGRect(x: (SCREEN_WIDTH - btnW) / 2, y: btnMargin * 4 + 3 * btnH, width: btnW, height: btnH))
+        let btn = UIButton(frame: CGRect(x: (SCREEN_WIDTH - btnW) / 2, y: TOP_BAR_HEIGHT + btnMargin * 4 + 3 * btnH, width: btnW, height: btnH))
         btn.setTitle("backToPrimaryIcon", for: .normal)
         view.addSubview(btn)
         btn.addTarget(self, action: #selector(backToPrimaryIcon(_:)), for: .touchUpInside)

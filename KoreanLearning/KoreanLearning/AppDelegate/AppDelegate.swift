@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import CYLTabBarController
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,6 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        MTXPlusButton.register()
         setupTabBarController()
         
         return true
@@ -99,8 +101,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 private extension AppDelegate {
     func setupTabBarController() {
-        guard let tabBarController = window?.rootViewController as? MTXTabBarController else { return }
-        tabBarController.setup()
+//        guard let tabBarController = window?.rootViewController as? MTXTabBarController else { return }
+//        tabBarController.setup()
+        
+        MTXPlusButton.register()
+        
+        let tabBarController = MTXTabBarController(viewControllers: self.viewControllers(), tabBarItemsAttributes: self.tabBarItemsAttributes())
+        self.window = UIWindow(frame: UIScreen.main.bounds)
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
+    }
+    
+    func viewControllers() -> [UINavigationController] {
+        let home = UINavigationController(rootViewController: MTXHomeRootViewController())
+        let listen = UINavigationController(rootViewController: MTXListenRootViewController())
+        let watch = UINavigationController(rootViewController: MTXWatchRootViewController())
+        //        let mineVc = UINavigationController(rootViewController: MTXMineRootViewController())
+        let mine = UINavigationController(rootViewController: UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CardContent"))
+
+        return [home,listen,watch,mine]
+    }
+
+    func tabBarItemsAttributes() -> [[String : String]] {
+        let tabBarItemOne = [CYLTabBarItemTitle: "首页",
+                             CYLTabBarItemImage: "home_normal",
+                             CYLTabBarItemSelectedImage: "home_highlight"]
+        let tabBarItemTwo = [CYLTabBarItemTitle: "听听",
+                             CYLTabBarItemImage: "mycity_normal",
+                             CYLTabBarItemSelectedImage: "mycity_highlight"]
+        let tabBarItemThree = [CYLTabBarItemTitle: "看看",
+                               CYLTabBarItemImage: "message_normal",
+                               CYLTabBarItemSelectedImage: "message_highlight"]
+        let tabBarItemFour = [CYLTabBarItemTitle: "我的",
+                              CYLTabBarItemImage: "account_normal",
+                              CYLTabBarItemSelectedImage: "account_highlight"]
+        return [tabBarItemOne,tabBarItemTwo,tabBarItemThree,tabBarItemFour]
     }
 }
 
